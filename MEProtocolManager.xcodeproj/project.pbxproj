@@ -15,6 +15,7 @@
 		2CA36D701EA5E25800FE132D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA36D6E1EA5E25800FE132D /* LaunchScreen.storyboard */; };
 		2CA36D7B1EA5E25800FE132D /* MEProtocolManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA36D7A1EA5E25800FE132D /* MEProtocolManagerTests.m */; };
 		2CA36D861EA5E25800FE132D /* MEProtocolManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA36D851EA5E25800FE132D /* MEProtocolManagerUITests.m */; };
+		2CA36D9C1EA5E5C600FE132D /* MEProtocolManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA36D9B1EA5E5C600FE132D /* MEProtocolManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		2CA36D811EA5E25800FE132D /* MEProtocolManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEProtocolManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA36D851EA5E25800FE132D /* MEProtocolManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MEProtocolManagerUITests.m; sourceTree = "<group>"; };
 		2CA36D871EA5E25800FE132D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CA36D9A1EA5E5C600FE132D /* MEProtocolManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEProtocolManager.h; sourceTree = "<group>"; };
+		2CA36D9B1EA5E5C600FE132D /* MEProtocolManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEProtocolManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		2CA36D5F1EA5E25700FE132D /* MEProtocolManager */ = {
 			isa = PBXGroup;
 			children = (
+				2CA36D961EA5E37700FE132D /* MEProtocolManager */,
 				2CA36D631EA5E25700FE132D /* AppDelegate.h */,
 				2CA36D641EA5E25700FE132D /* AppDelegate.m */,
 				2CA36D661EA5E25700FE132D /* ViewController.h */,
@@ -138,6 +142,15 @@
 				2CA36D871EA5E25800FE132D /* Info.plist */,
 			);
 			path = MEProtocolManagerUITests;
+			sourceTree = "<group>";
+		};
+		2CA36D961EA5E37700FE132D /* MEProtocolManager */ = {
+			isa = PBXGroup;
+			children = (
+				2CA36D9A1EA5E5C600FE132D /* MEProtocolManager.h */,
+				2CA36D9B1EA5E5C600FE132D /* MEProtocolManager.m */,
+			);
+			path = MEProtocolManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +220,7 @@
 				TargetAttributes = {
 					2CA36D5C1EA5E25700FE132D = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = ZWGDL4KU3D;
 						ProvisioningStyle = Automatic;
 					};
 					2CA36D751EA5E25800FE132D = {
@@ -274,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CA36D681EA5E25700FE132D /* ViewController.m in Sources */,
+				2CA36D9C1EA5E5C600FE132D /* MEProtocolManager.m in Sources */,
 				2CA36D651EA5E25700FE132D /* AppDelegate.m in Sources */,
 				2CA36D621EA5E25700FE132D /* main.m in Sources */,
 			);
@@ -424,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZWGDL4KU3D;
 				INFOPLIST_FILE = MEProtocolManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Meteorshower.MEProtocolManager;
@@ -435,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZWGDL4KU3D;
 				INFOPLIST_FILE = MEProtocolManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Meteorshower.MEProtocolManager;
@@ -507,6 +524,7 @@
 				2CA36D8C1EA5E25800FE132D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CA36D8D1EA5E25800FE132D /* Build configuration list for PBXNativeTarget "MEProtocolManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +533,7 @@
 				2CA36D8F1EA5E25800FE132D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CA36D901EA5E25800FE132D /* Build configuration list for PBXNativeTarget "MEProtocolManagerUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +542,7 @@
 				2CA36D921EA5E25800FE132D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

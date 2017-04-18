@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MEProtocolManager.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [MEProtocolManager registServiceProvide:self forProtocol:@protocol(TestProtocol)];
+    
+    id<TestProtocol>provide = [MEProtocolManager serviceProvideForProtocol:@protocol(TestProtocol)];
 }
 
 
